@@ -5,15 +5,15 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;*/
-    background-color: var(--bgcolor);
+    background-color: black;
     width: 100%;
     z-index: -1;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    animation: fadein 3s;
-    transition: all 2s;
+    animation: lightson 1.25s ease-in both 6s;
+
 }
 
 div.splashwindow {
@@ -30,6 +30,7 @@ div.splashwindow {
 }
 body{
     height: 250vh;
+    background-color: black;
 }
 
 .splashwindow img {
@@ -165,6 +166,16 @@ div a button{
 .imgbox:hover button{
    opacity: 1;
    transition: all 1s;
+}
+@keyframes lightson {
+    from{
+        background-color: var(--fontcolor);
+        opacity: 1;
+    }
+    to{
+        background-color: var(--bgcolor);
+        opacity: 0;
+    }
 }
 
 
