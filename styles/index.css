@@ -1,3 +1,6 @@
+*{
+    text-decoration: none;
+}
 .splashscreen {
     /* The splashscreen is a div with a zindex of -, i.e, under all other elements. It has a background of an image, and the link is above, if you want to change it. */
     /*background-image: url(../sources/IMG_9690.jpg);
@@ -5,19 +8,19 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;*/
-    background-color: black;
+    background-color: var(--bgcolor);
     width: 100%;
     z-index: -1;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    animation: lightson 1.25s ease-in both 6s;
+    /* animation: lightson 1.25s ease-in both 6s; */
 
 }
 
 div.splashwindow {
-    width: 80vw;
+    width: 95vw;
     height: 70vh;
     margin-top: 15vh;
     margin-bottom: 15vh;
@@ -27,10 +30,12 @@ div.splashwindow {
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
+    /* animation: fadein 2.25s ease-in both 6s; */
+
 }
 body{
     height: 250vh;
-    background-color: black;
+    background-color: var(--bgcolor);
 }
 
 .splashwindow img {
@@ -45,7 +50,7 @@ body{
 .secondscreen {
     /* This selector works for the transparent lower window with the order button */
     background-attachment: fixed;
-    height: 50vh;
+    height: 20vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0);
     z-index: -1;
@@ -71,7 +76,10 @@ body{
     justify-content: space-evenly;
 
 
-}
+}a div {
+    color: var(--fontcolor);
+    text-decoration: none; /* no underline */
+  }
 
 .storyandteam a img {
     width: 50%;
@@ -86,12 +94,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100%;margin-bottom: 20vh;
+
 }
+
 .gallery > .imgbox{
     width: 10%;
     height: 80vh;
-    background-color: black;
+    background-color: var(--bgcolor);
     margin: 0.1vw;
     border-radius: 15px;
     background-image: url(../sources/shoegallery/PIC1__.png);
@@ -120,34 +130,48 @@ body{
     background-position: 80% 0%;
 }
 .videoContainer {
-    border-radius: 10px; /* or you can use percentages, ems, etc. */
+ /* or you can use percentages, ems, etc. */
     /*border: 1px solid #ccc;  optional, just to see the border */
-    padding: 50px; /* optional, for some internal spacing */
+  /* optional, for some internal spacing */
     display: grid;
     place-items: center;
     height: 100vh;
-    width: 100%; /* Adjust as necessary */
+    width: 95vw; /* Adjust as necessary */
     height: auto; /* Adjust as necessary */
+    margin: auto;
 }
 .videoClass {
     border-radius: 20px; /* Adjust as necessary */
     overflow: hidden; /* Ensures the content inside the border follows the border radius */
-    width: 100%;
-    height: auto;
+    width: 95vw;
+
     display: block;
 }
-
+@media screen and (width < 100vh){
+    .videoclass{
+        width: 100vw;
+        border-radius: 0px;
+    }
+    .gallery{
+        display: none;
+    }
+    .splashwindow{
+        margin: 0;
+        width: 500px;
+        background-color: var(--bgcolor);
+    }
+}
 .navbar-brand {
     font-size: 1.5rem; /* Adjust size as needed */
     font-weight: bold;
-    color: black !important;
+    color: var(--fontcolor) !important;
     
 }
 
 a {
     font-size: 1.2rem; /* Adjust size as needed */
     font-weight: bold;
-    color: black !important;
+    color: var(--fontcolor) !important;
 }
 
 .navbar {
@@ -177,86 +201,6 @@ div a button{
         opacity: 0;
     }
 }
-
-
-/*  Here is some archived code with values you can use as jumping off points.
-*{
-    margin: 0rem;
-    padding: 0px;
+.card{
+    border-width: 100;
 }
-
-body{
-    background-color: #598F7F;
-    height: 100vh;
-    width: 100vw;
-}
-.outerwrapper{
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
-}
-.innerwrapper{
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-    scroll-snap-type: x mandatory;
-}
-.slide {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    scroll-snap-align: start;
-}
-.innerwrapper {
-    display: flex;
-    flex-direction: row;
-    width: 400vw;
-}
-.one {
-    background-image: url(../sources/1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}.two {background:#755851;}.three {background: #598F7F;}.four {background: #C5D8A4;}
-
-.window{
-    width: 80vw;
-    height: 70vh;
-    margin: auto;
-    background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: whitesmoke;
-}
-.brandtitle{
-    font-size: clamp(5rem, 10vw, 10rem);
-    text-align: center;
-    font-family: Playfair Display;
-}
-.tagline{
-    font-size: clamp(50px, 5vw, 100PX);
-    font-family: sacramento;
-}
-.splash{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-
-}
-button{
-    width: clamp(150px, 19vw, 250px);
-    height: clamp(50px, 5vh, 71px);
-    background-color: black;
-    border-width: 0px;
-    border-radius: 10px;
-    color: wheat;
-    font-family: Gabarito;
-    font-size: 1.4rem;
-}*?

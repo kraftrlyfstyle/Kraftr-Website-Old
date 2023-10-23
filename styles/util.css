@@ -28,9 +28,12 @@ hidden (top left bottom right nogrow as class specifiers) & show  -- for animati
 :root{
     --bgcolor: #ffffff;
     --fontcolor: #000000;
-    --glasscolor: #cbbe96;
+    --glasscolor: #0000006c;
     --lightglasscolor: #8484842f;
 
+}
+a{
+    text-decoration: none;
 }
 html {
     scroll-behavior: smooth;
@@ -60,8 +63,8 @@ body{
     background-color: var(--lightglasscolor);
     backdrop-filter: blur(5px);
 }
-.rounded{
-    border-radius: 200px;
+.roundedcorners{
+    border-radius: 15px;
     border-width: 0px;
 }
 .fadeinleft{
@@ -187,17 +190,17 @@ button:hover{
     font-family: Prata;
 }
 .bigbodytext{
-    font-size: clamp(1.5rem, 15vw, 6rem);
+    font-size: clamp(1.5rem, 15vw, 4rem);
     font-family: League Spartan;
 
 }
 .bodytext{
-    font-size: clamp(1rem, 2vw, 4rem);
+    font-size: clamp(1rem, 4vw, 2rem);
     font-family: League Spartan;
     vertical-align: middle;
     text-align: center;
 }
-a {
+a div {
     color: var(--fontcolor);
     text-decoration: none; /* no underline */
   }
