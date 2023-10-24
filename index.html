@@ -38,24 +38,23 @@
 
   <div class="videoContainer">
     <!--width="100%" height="100%"-->
-    <video autoplay="autoplay" playsinline="" muted="" class="videoClass" src="sources/1234.mp4"
+    <video autoplay="autoplay" playsinline="" muted="" class="videoClass" src="sources/1234.mp4" id="myVideo"
       aria-hidden="true"></video>
     <div class="splashscreen  img"> <!--This is the div that contains the background image-->
     </div>
   </div>
   <div class="splashwindow center glass hidden top">
     <div class="herotext fadeinleft">
-      Kraftr
+      We make Fashion
     </div>
-    <div class="bodytext fadeinright ">Shoes with a soul</div>
+    <div class="bodytext fadeinright ">with a handcrafted touch</div>
     <a href="/index.html#secondscreen"><img src="sources/downarrow.svg" alt="" class="fadeintop bounce">
     </a>
   </div>
   <div class="secondscreen center" id="secondscreen">
     <!--Transparent scrollable div that only contains the order button-->
     <a href="orderonshopify"><button class="order  center roundedcorners glass grow hidden"
-        style="background-color: darkgray;">Order
-        Now</button></a>
+        style="box-shadow: 0 2rem 3rem 0.75rem hsla(0, 0%, 0%, 0.25);">Launching Soon</button></a>
   </div>
 
   <div class="gallery centertext bodytext hidden">
@@ -66,20 +65,20 @@
     <div class="imgbox hidden top"><a href="ProductDes.html"><button>Order Now</button></a></div>
   </div>
 
-  <div id="carouselExampleAutoplaying hidden" class="carousel slide carousel-fade" data-bs-ride="carousel"> 
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="carouselimgcontainer center roundedcorners"></div>
+  <section class="container">
+    <div class="slider-wrapper">
+      <div class="slider">
+        <img id="slide-1" src="https://images.unsplash.com/photo-1656464868371-602be27fd4c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="3D rendering of an imaginary orange planet in space" />
+        <img id="slide-2" src="https://images.unsplash.com/photo-1657586640569-4a3d4577328c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="3D rendering of an imaginary green planet in space" />
+        <img id="slide-3" src="https://images.unsplash.com/photo-1656077217715-bdaeb06bd01f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="3D rendering of an imaginary blue planet in space" />
       </div>
-      <div class="carousel-item">
-        <div class="carouselimgcontainer center roundedcorners"></div>
-        </div>
-        <div class="carousel-item">
-          <div class="carouselimgcontainer center roundedcorners">
-          </div>
-        </div>
+      <div class="slider-nav">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
       </div>
-
+    </div>
+  </section>
 
 
 
@@ -89,7 +88,7 @@
 
       <div class="storyandteam" >
 
-        <div class="card roundedcorners" style="width: 18rem;">
+        <div class="card roundedcorners" style="width: 18rem; 	box-shadow: 0 2rem 3rem 0.75rem hsla(0, 0%, 0%, 0.25);">
           <img class="card-img-top hidden"
             src="https://images.unsplash.com/photo-1697564070857-58a1a1318abc?auto=format&fit=crop&q=80&w=1632&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Card image cap">
@@ -100,7 +99,7 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <div class="card roundedcorners" style="width: 18rem;">
+        <div class="card roundedcorners" style="width: 18rem; 	box-shadow: 0 2rem 3rem 0.75rem hsla(0, 0%, 0%, 0.25);">
           <img class="card-img-top hidden"
             src="https://images.unsplash.com/photo-1697564070857-58a1a1318abc?auto=format&fit=crop&q=80&w=1632&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Card image cap">
@@ -238,7 +237,7 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
+      <script src="scripts/index.js"></script>
 </body>
 
 </html>
