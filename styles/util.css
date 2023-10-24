@@ -200,7 +200,4 @@ button:hover{
     vertical-align: middle;
     text-align: center;
 }
-a div {
-    color: var(--fontcolor);
-    text-decoration: none; /* no underline */
-  }
+
