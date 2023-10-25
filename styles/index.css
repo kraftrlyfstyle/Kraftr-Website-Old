@@ -89,7 +89,18 @@ body{
     margin-top: 15vh;
 
 
-}a div {
+}
+@media screen and (width < 100vh) {
+    .storyandteam{
+        display: grid;
+    }
+    .storyandteam .card{
+    margin-top: 15vh;
+    align-items: center;
+}
+}
+
+a div {
     color: var(--fontcolor);
     text-decoration: none; /* no underline */
   }
