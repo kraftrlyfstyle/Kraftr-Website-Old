@@ -90,15 +90,19 @@ body{
 
 
 }
+.card{
+    background-color: var(--bgcolor);
+    
+}
 @media screen and (width < 100vh) {
     .storyandteam{
         display: grid;
     }
     .storyandteam .card{
     margin-top: 15vh;
-    align-items: center;
 }
 }
+
 
 a div {
     color: var(--fontcolor);
