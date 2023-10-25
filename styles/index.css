@@ -154,7 +154,7 @@ body{
     width: 100vw; /* Adjust as necessary */
     height: auto; /* Adjust as necessary */
     margin: auto;
-    transition: all 2s;
+    transition: all 1s;
     box-shadow: 0 2rem 3rem 0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 20px;
 }
@@ -162,7 +162,7 @@ body{
     border-radius: 20px; /* Adjust as necessary */
     overflow: hidden; /* Ensures the content inside the border follows the border radius */
     width: 100vw;
-    transition: all 2s;
+    transition: all 1s;
     display: block;
 }
 @media screen and (width < 100vh){
@@ -235,7 +235,7 @@ body {
 
 .slider-wrapper {
 	position: relative;
-	max-width:50rem;
+	max-width:40rem;
 	margin: 0 auto;
 }
 
