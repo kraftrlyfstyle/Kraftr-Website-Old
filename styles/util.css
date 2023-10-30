@@ -26,10 +26,10 @@ hidden (top left bottom right nogrow as class specifiers) & show  -- for animati
 }
 /* This property causes all elements to smoothly transition between two states */
 :root{
-    --bgcolor: #ffffff;
-    --fontcolor: #000000;
-    --glasscolor: #0000006c;
-    --lightglasscolor: #8484842f;
+    --bgcolor: #DCD0C9;
+    --fontcolor: #ffffff;
+    --glasscolor: #1e2b1a;
+    --lightglasscolor: #ffffff;
 
 }
 a{
@@ -201,3 +201,6 @@ button:hover{
     text-align: center;
 }
 
+p, h5,.font{
+    color: var(--fontcolor);
+}

@@ -6,6 +6,9 @@ function myHandler(e) {
     document.getElementsByClassName('splashscreen')[0].style.animation = "lightson 1.25s ease-in both"
     document.getElementsByClassName('splashwindow')[0].style.animation = "fadein 2.25s ease-in both "
     document.getElementsByClassName('herotext')[0].style.color = "var(--fontcolor)"
+    document.getElementsByClassName('lightsoffheader')[0].style.color = "var(--bgcolor)"
+    document.getElementsByClassName('splashwindow')[0].style.backgroundColor = "var(--glasscolor)"
+    document.body[0].style.backgroundColor="var(--bgcolor)"
 }
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
