@@ -7,8 +7,6 @@
   
   body {
     margin: 0;
-    height: 250vh;
-    background-color: var(--bgcolor);
   }
 .splashscreen {
     /* The splashscreen is a div with a zindex of -, i.e, under all other elements. It has a background of an image, and the link is above, if you want to change it. */
@@ -46,7 +44,10 @@ div.splashwindow {
    color: var(--fontcolor);
    transition: all 2s;
 }
-
+body{
+    height: 250vh;
+    background-color: var(--bgcolor);
+}
 
 .splashwindow img {
     /* This selector works for the down arrow png under  the tagline */
@@ -190,20 +191,20 @@ a div {
     .splashwindow{
         margin: 0;
         width: 500px;
-        margin-top: -150px;
+        background-color: var(--bgcolor);
     }
 }
 .navbar-brand {
     font-size: 1.5rem; /* Adjust size as needed */
     font-weight: bold;
-
+    color: var(--fontcolor) !important;
     
 }
 
 a {
     font-size: 1.2rem; /* Adjust size as needed */
     font-weight: bold;
-
+    color: var(--fontcolor) !important;
 }
 
 .navbar {
@@ -228,7 +229,7 @@ div a button{
 }
 @keyframes lightson {
     from{
-        background-color: black;
+        background-color: var(--fontcolor);
         opacity: 1;
     }
     to{
@@ -239,6 +240,10 @@ div a button{
 .card{
     border-width: 100;
 }
+body {
+	background-color: #f8fafc;
+}
+
 .container {
 	padding: 2rem;
 }
