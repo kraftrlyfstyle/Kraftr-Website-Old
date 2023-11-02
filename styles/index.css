@@ -134,30 +134,37 @@ a div {
     background-color: var(--bgcolor);
     margin: 0.1vw;
     border-radius: 15px;
-    background-image: url(../sources/shoegallery/PIC1__.png);
+    background-image: url(../sources/shoegallery/1.png);    
     background-size: cover;
     background-repeat: no-repeat;
+    transform: scale(0.8);
     transition: all 0.5s ease-in-out;
 }
 .imgbox:hover{
     width: 800px;
     transition: 2s all;
+    transform: scale(1);
+    background-size: cover;
 }
 .imgbox:nth-child(2){
-    background-image: url(../sources/shoegallery/PIC2__.png);
-    background-position: 20%;
+    background-image: url(../sources/shoegallery/2.png);
+    background-position: 20% 0%;
 }
 .imgbox:nth-child(3){
-    background-image: url(../sources/shoegallery/PIC3__.png);
-    background-position: 40%;
+    background-image: url(../sources/shoegallery/3.png);
+    background-position: 40% 50%;
+
+}
+i.imgbox:nth-child(3):hover{
+    background-size: 150%;
 }
 .imgbox:nth-child(4){
-    background-image: url(../sources/shoegallery/PIC4__.png);
+    background-image: url(../sources/shoegallery/4.png);
     background-position: 60%;
 }
 .imgbox:nth-child(5){
-    background-image: url(../sources/shoegallery/PIC5__.png);
-    background-position: 80% 0%;
+    background-image: url(../sources/shoegallery/5.png);
+    background-position: 70% 0%;
 }
 .videoContainer {
  /* or you can use percentages, ems, etc. */
